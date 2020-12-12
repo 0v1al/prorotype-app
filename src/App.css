@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --height: 5rem;
+    --primary-color: rgb(9, 104, 14);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    position: relative;
+    padding-top: var(--height);
+    background: rgb(255, 255, 255);
+    background: -webkit-linear-gradient(bottom right, rgb(181, 219, 172), rgb(182, 201, 182));
+    background: -moz-linear-gradient(bottom right,  rgb(181, 219, 172),rgb(182, 201, 182));
+    background: linear-gradient(to top left, rgb(181, 219, 172), rgb(182, 201, 182));
+    font-family: 'Roboto', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ p {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.customContainer {
+    min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.btnApp {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: #fff;
+    background: linear-gradient(to top left, rgb(7, 90, 6), rgb(9, 104, 14));
+    padding: .7rem 1.4rem;
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+    transition: 100ms all ease-in-out;
+    box-shadow: .01rem .1rem .1rem .1rem rgba(0, 0, 0, .2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btnRecipeForm {
+    font-size: 1rem;
+    padding: .3rem .7rem;
+}
+
+.btnApp:hover {
+    text-decoration: none !important;
+    color: #fff !important;
+    background: linear-gradient(to top left, rgb(9, 82, 7), rgb(8, 97, 13));
 }
