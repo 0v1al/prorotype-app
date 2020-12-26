@@ -11,6 +11,9 @@ import RecipeModify from './components/RecipeModify';
 import History from './components/History';
 import RecipeAdd from './components/RecipeAdd';
 import MyRecipes from './components/MyRecipes';
+import Register from './components/Register';
+import Login from './components/Login';
+import RecipeCreate from './components/RecipeCreate';
 
 import './App.css';
 
@@ -29,6 +32,9 @@ const App = () => {
           <Route path="/recipes/history" component={History} exact />
           <Route path="/recipe/add" component={RecipeAdd} exact />
           <Route path="/recipes/my" component={MyRecipes} exact />
+          <Route path="/register" component={Register} exact />
+          <Route path="/login" component={Login} exact />
+          <Route path="/recipe/create" component={RecipeCreate} exact />
         </Switch>
       </main>
       <Route path="/" component={Footer} />

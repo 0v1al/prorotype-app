@@ -9,7 +9,9 @@ const NavbarMenu = () => {
       {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
       {/* <Navbar.Collapse id="basic-navbar-nav"> */}
       <Nav className="ml-auto">
+        <Link to="/register" className={styles.navLink}>Register</Link>
         <Link to="/recipe" className={styles.navLink}>Recipes</Link>
+        <Link to="/recipe/create" className={styles.navLink}>Create Recipe</Link>
         <Link to="/recipes/custom" className={styles.navLink}>Custom Recipes</Link>
         {/* <Link to="/recipes/my" className={styles.navLink}>My Recipes</Link> */}
         <Link to="/recipes/history" className={styles.navLink}>History</Link>
